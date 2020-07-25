@@ -92,7 +92,7 @@ export class ShareEmbed extends PureComponent<Props, State> {
         <Field
           label="Embed HTML"
           description="The HTML code below can be pasted and included in another web page. Unless anonymous access is enabled, 
-                the user viewing that page need to be signed into Grafana for the graph to load."
+                the user viewing that page need to be signed into Craft Metrics for the graph to load."
         >
           <TextArea rows={5} value={iframeHtml} onChange={this.onIframeHtmlChange}></TextArea>
         </Field>

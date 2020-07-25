@@ -80,8 +80,8 @@ func createTestEvalContext(cmd *NotificationTestCommand) *EvalContext {
 	testRule := &Rule{
 		DashboardID: 1,
 		PanelID:     1,
-		Name:        "Test notification",
-		Message:     "Someone is testing the alert notification within Grafana.",
+		Name:        "Testing",
+		Message:     "This is a test alert from Craft Metrics",
 		State:       models.AlertStateAlerting,
 		ID:          rand.Int63(),
 	}

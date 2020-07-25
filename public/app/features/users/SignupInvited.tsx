@@ -3,7 +3,6 @@ import { getBackendSrv } from '@grafana/runtime';
 import { Button, Field, Form, Input } from '@grafana/ui';
 import { useAsync } from 'react-use';
 import Page from 'app/core/components/Page/Page';
-import { contextSrv } from 'app/core/core';
 import { getConfig } from 'app/core/config';
 import { GrafanaRouteComponentProps } from 'app/core/navigation/types';
 
@@ -18,7 +17,7 @@ const navModel = {
   main: {
     icon: 'grafana',
     text: 'Invite',
-    subTitle: 'Register your Grafana account',
+    subTitle: 'Register your Craft Metrics account',
     breadcrumbs: [{ title: 'Login', url: 'login' }],
   },
   node: {
@@ -32,7 +31,6 @@ export const SignupInvitedPage: FC<Props> = ({ match }) => {
   const code = match.params.code;
   const [initFormModel, setInitFormModel] = useState<FormModel>();
   const [greeting, setGreeting] = useState<string>();
-  const [invitedBy, setInvitedBy] = useState<string>();
 
   useAsync(async () => {
     const invite = await getBackendSrv().get(`/api/user/invite/${code}`);
@@ -44,7 +42,6 @@ export const SignupInvitedPage: FC<Props> = ({ match }) => {
     });
 
     setGreeting(invite.name || invite.email || invite.username);
-    setInvitedBy(invite.invitedBy);
   }, [code]);
 
   const onSubmit = async (formData: FormModel) => {
@@ -62,10 +59,7 @@ export const SignupInvitedPage: FC<Props> = ({ match }) => {
         <h3 className="page-sub-heading">Hello {greeting || 'there'}.</h3>
 
         <div className="modal-tagline p-b-2">
-          <em>{invitedBy || 'Someone'}</em> has invited you to join Grafana and the organization{' '}
-          <span className="highlight-word">{contextSrv.user.orgName}</span>
-          <br />
-          Please complete the following and choose a password to accept your invitation and continue:
+          Please complete the following and choose a password to activate your account:
         </div>
         <Form defaultValues={initFormModel} onSubmit={onSubmit}>
           {({ register, errors }) => (

@@ -118,7 +118,7 @@ describe('DashboardPage', () => {
     });
 
     it('Should update title', () => {
-      expect(document.title).toBe('My dashboard - Grafana');
+      expect(document.title).toBe('My dashboard - Craft Metrics');
     });
 
     it('Should render dashboard grid', () => {

@@ -19,7 +19,7 @@ func TestUploadToS3(t *testing.T) {
 		s3Uploader, err := NewImageUploader()
 		So(err, ShouldBeNil)
 
-		path, err := s3Uploader.Upload(context.Background(), "../../../public/img/logo_transparent_400x.png")
+		path, err := s3Uploader.Upload(context.Background(), "../../../public/img/cm_wordmark_400_400x.png")
 		So(err, ShouldBeNil)
 		So(path, ShouldNotEqual, "")
 	})
