@@ -33,6 +33,7 @@ import {
 } from './dateTimeFormatters';
 import { toHex, sci, toHex0x, toPercent, toPercentUnit } from './arithmeticFormatters';
 import { binaryPrefix, currency, SIPrefix } from './symbolFormatters';
+import { toBrewingP, toBrewingBX } from './brewingFormatters';
 
 export const getCategories = (): ValueFormatCategory[] => [
   {
@@ -350,6 +351,14 @@ export const getCategories = (): ValueFormatCategory[] => [
       { name: 'Celsius (°C)', id: 'celsius', fn: toFixedUnit('°C') },
       { name: 'Fahrenheit (°F)', id: 'fahrenheit', fn: toFixedUnit('°F') },
       { name: 'Kelvin (K)', id: 'kelvin', fn: toFixedUnit('K') },
+    ],
+  },
+  {
+    name: 'Brewing',
+    formats: [
+      { name: 'Specific Gravity', id: 'brewingSG', fn: toFixedUnit('') },
+      { name: 'Brix (°Bx)', id: 'brewingBX', fn: toBrewingBX },
+      { name: 'Plato (°P)', id: 'brewingP', fn: toBrewingP },
     ],
   },
   {
