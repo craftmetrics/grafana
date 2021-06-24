@@ -101,6 +101,8 @@ func (ss *SQLStore) createUser(ctx context.Context, sess *DBSession, args userCr
 		args.Email = args.Login
 	}
 
+	args.Email = strings.ToLower(args.Email)
+
 	exists, err := sess.Where("email=? OR login=?", args.Email, args.Login).Get(&models.User{})
 	if err != nil {
 		return user, err
@@ -300,6 +302,9 @@ func GetUserByLogin(query *models.GetUserByLoginQuery) error {
 		return models.ErrUserNotFound
 	}
 
+	// Ensure case insensitive login matching.
+	query.LoginOrEmail = strings.ToLower(query.LoginOrEmail)
+
 	// Try and find the user by login first.
 	// It's not sufficient to assume that a LoginOrEmail with an "@" is an email.
 	user := &models.User{Login: query.LoginOrEmail}
@@ -350,7 +355,7 @@ func UpdateUser(cmd *models.UpdateUserCommand) error {
 	return inTransaction(func(sess *DBSession) error {
 		user := models.User{
 			Name:    cmd.Name,
-			Email:   cmd.Email,
+			Email:   strings.ToLower(cmd.Email),
 			Login:   cmd.Login,
 			Theme:   cmd.Theme,
 			Updated: time.Now(),
