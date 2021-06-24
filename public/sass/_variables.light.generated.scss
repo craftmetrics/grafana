@@ -11,17 +11,19 @@
 // Global values
 // --------------------------------------------------
 
+$green: #00583f;
+
 $theme-name: light;
 
 // New Colors
 // -------------------------
-$blue-light: #0465d7;
-$blue-base: #3871DC;
-$blue-shade: rgb(44, 90, 176);
+$blue-light: #00956b;
+$blue-base: #00805b;
+$blue-shade: rgb(0, 102, 72);
 $red-base: #E0226E;
 $red-shade: rgb(179, 27, 88);
-$green-base: #1A7F4B;
-$green-shade: rgb(20, 101, 60);
+$green-base: #00805b;
+$green-shade: rgb(0, 102, 72);
 $orange-dark: #ff780a;
 
 $gray98: #f7f8fa;
@@ -63,26 +65,26 @@ $border1: rgba(36, 41, 46, 0.30);
 
 // Accent colors
 // -------------------------
-$blue: #0465d7;
+$blue: #00956b;
 $red: $red-base;
 $yellow: #ecbb13;
 $orange: #eb7b18;
 $purple: #9933cc;
-$variable: #0465d7;
+$variable: #00956b;
 
 $brand-primary: #eb7b18;
-$brand-success: #1A7F4B;
+$brand-success: #00805b;
 $brand-warning: #E56F00;
 $brand-danger: #E0226E;
 
 $query-red: #CF0E5B;
-$query-green: #1A7F4B;
+$query-green: #00956b;
 $query-purple: #fe85fc;
 $query-orange: #eb7b18;
 
 // Status colors
 // -------------------------
-$online: #1A7F4B;
+$online: #00956b;
 $warn: #BD4B00;
 $critical: #CF0E5B;
 
@@ -99,20 +101,20 @@ $text-color-semi-weak: rgba(36, 41, 46, 0.75);
 $text-color-weak: rgba(36, 41, 46, 0.75);
 $text-color-faint: rgba(36, 41, 46, 0.50);
 $text-color-emphasis: #000;
-$text-blue: #0465d7;
+$text-blue: #00956b;
 
 $text-shadow-faint: none;
 
 // gradients
-$brand-gradient-horizontal: linear-gradient(to right, #f05a28 30%, #fbca0a 99%);
-$brand-gradient-vertical: linear-gradient(#f05a28 30%, #fbca0a 99%);
+$brand-gradient-horizontal: linear-gradient(to right, #00946a 0%, #00805b 100%);
+$brand-gradient-vertical: linear-gradient(#00946a 0%, #00805b 100%);
 
 // Links
 // -------------------------
 $link-color: rgba(36, 41, 46, 1);
 $link-color-disabled: rgba(36, 41, 46, 0.50);
 $link-hover-color: #000;
-$external-link-color: #0465d7;
+$external-link-color: #00956b;
 
 // Typography
 // -------------------------
@@ -271,10 +273,10 @@ $tab-border-color: $gray-5;
 // -------------------------
 $warning-text-color: #BD4B00;
 $error-text-color: #CF0E5B;
-$success-text-color: #1A7F4B;
+$success-text-color: #00956b;
 
 $alert-error-bg: #E0226E;
-$alert-success-bg: #1A7F4B;
+$alert-success-bg: #00805b;
 $alert-warning-bg: #E56F00;
 $alert-info-bg: #E56F00;
 
@@ -355,16 +357,16 @@ $variable-option-bg: $dropdownLinkBackgroundHover;
 //Switch Slider
 // -------------------------
 $switch-bg: $white;
-$switch-slider-color: $gray-7;
+$switch-slider-color: $white;
 $switch-slider-off-bg: $gray-5;
-$switch-slider-on-bg: #1f60c4;
+$switch-slider-on-bg: linear-gradient(90deg, lighten($green, 10%), $green);;
 $switch-slider-shadow: 0 0 3px $dark-2;
 
 //Checkbox
 // -------------------------
 $checkbox-bg: $gray-6;
 $checkbox-border: 1px solid $gray-3;
-$checkbox-checked-bg: linear-gradient(0deg, #ff9830, #e55400);
+$checkbox-checked-bg: linear-gradient(0deg, lighten($green, 10%), $green);
 $checkbox-color: $gray-7;
 
 //Panel Edit

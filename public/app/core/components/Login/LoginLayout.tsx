@@ -3,7 +3,6 @@ import { cx, css, keyframes } from '@emotion/css';
 import { useStyles2 } from '@grafana/ui';
 import { Branding } from '../Branding/Branding';
 import { GrafanaTheme2 } from '@grafana/data';
-import { Footer } from '../Footer/Footer';
 
 interface InnerBoxProps {
   enterAnimation?: boolean;
@@ -15,7 +14,6 @@ export const InnerBox: FC<InnerBoxProps> = ({ children, enterAnimation = true })
 
 export const LoginLayout: FC = ({ children }) => {
   const loginStyles = useStyles2(getLoginStyles);
-  const subTitle = Branding.GetLoginSubTitle();
   const [startAnim, setStartAnim] = useState(false);
 
   useEffect(() => setStartAnim(true), []);
@@ -25,14 +23,9 @@ export const LoginLayout: FC = ({ children }) => {
       <div className={cx(loginStyles.loginContent, Branding.LoginBoxBackground(), 'login-content-box')}>
         <div className={loginStyles.loginLogoWrapper}>
           <Branding.LoginLogo className={loginStyles.loginLogo} />
-          <div className={loginStyles.titleWrapper}>
-            <h1 className={loginStyles.mainTitle}>{Branding.LoginTitle}</h1>
-            {subTitle && <h3 className={loginStyles.subTitle}>{Branding.GetLoginSubTitle()}</h3>}
-          </div>
         </div>
         <div className={loginStyles.loginOuterBox}>{children}</div>
       </div>
-      <Footer />
     </Branding.LoginBackground>
   );
 };

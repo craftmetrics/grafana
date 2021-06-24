@@ -6,9 +6,9 @@ Array [
     "alias": "Value",
     "aliasEscaped": "Value",
     "bars": Object {
-      "fillColor": "#7EB26D",
+      "fillColor": "#00b380",
     },
-    "color": "#7EB26D",
+    "color": "#00b380",
     "dataFrameIndex": 0,
     "datapoints": Array [
       Array [
@@ -197,9 +197,9 @@ Array [
     "alias": "Count",
     "aliasEscaped": "Count",
     "bars": Object {
-      "fillColor": "#7EB26D",
+      "fillColor": "#00b380",
     },
-    "color": "#7EB26D",
+    "color": "#00b380",
     "dataFrameIndex": 0,
     "datapoints": Array [
       Array [

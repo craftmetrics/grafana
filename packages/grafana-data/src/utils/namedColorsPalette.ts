@@ -15,7 +15,7 @@ export function getColorFromHexRgbOrName(color: string, type?: GrafanaThemeType)
 }
 
 export const classicColors = [
-  '#7EB26D', // 0: pale green
+  '#00b380', // 0: Craft Metrics green
   '#EAB839', // 1: mustard
   '#6ED0E0', // 2: light blue
   '#EF843C', // 3: orange

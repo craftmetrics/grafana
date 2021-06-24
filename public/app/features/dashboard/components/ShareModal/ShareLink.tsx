@@ -142,7 +142,7 @@ export class ShareLink extends PureComponent<Props, State> {
             >
               Grafana image renderer plugin
             </a>
-            . Please contact your Grafana administrator to install the plugin.
+            . Please <a href="mailto:support@craftmetrics.ca">contact support</a> to install the plugin.
           </Alert>
         )}
       </>

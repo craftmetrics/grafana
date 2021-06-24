@@ -29,9 +29,9 @@ export const LoginForm: FC<Props> = ({ children, onSubmit, isLoggingIn, password
       <Form onSubmit={onSubmit} validateOn="onChange">
         {({ register, errors }) => (
           <>
-            <Field label="Email or username" invalid={!!errors.user} error={errors.user?.message}>
+            <Field label="Email" invalid={!!errors.user} error={errors.user?.message}>
               <Input
-                {...register('user', { required: 'Email or username is required' })}
+                {...register('user', { required: 'Email is required' })}
                 autoFocus
                 autoCapitalize="none"
                 placeholder={loginHint}

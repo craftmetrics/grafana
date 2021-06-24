@@ -8,8 +8,16 @@ export interface BrandComponentProps {
   children?: JSX.Element | JSX.Element[];
 }
 
-const LoginLogo: FC<BrandComponentProps> = ({ className }) => {
-  return <img className={className} src="public/img/grafana_icon.svg" alt="Grafana" />;
+export const LoginLogo: FC<BrandComponentProps> = ({ className }) => {
+  const maxSize = css`
+    max-width: 180px;
+  `;
+
+  return (
+    <>
+      <img className={cx(className, maxSize)} src="public/img/cm_stacktop_rev.png" alt="Craft Metrics" />
+    </>
+  );
 };
 
 const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
@@ -33,14 +41,14 @@ const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
   return <div className={cx(background, className)}>{children}</div>;
 };
 
-const MenuLogo: FC<BrandComponentProps> = ({ className }) => {
-  return <img className={className} src="public/img/grafana_icon.svg" alt="Grafana" />;
+export const MenuLogo: FC<BrandComponentProps> = ({ className }) => {
+  return <img className={className} src="public/img/cm_logo.png" alt="Craft Metrics" />;
 };
 
 const LoginBoxBackground = () => {
   const theme = useTheme2();
   return css`
-    background: ${colorManipulator.alpha(theme.colors.background.primary, 0.7)};
+    background: ${colorManipulator.alpha(theme.colors.background.primary, 0.5)};
     background-size: cover;
   `;
 };
@@ -50,8 +58,8 @@ export class Branding {
   static LoginBackground = LoginBackground;
   static MenuLogo = MenuLogo;
   static LoginBoxBackground = LoginBoxBackground;
-  static AppTitle = 'Grafana';
-  static LoginTitle = 'Welcome to Grafana';
+  static AppTitle = 'Craft Metrics';
+  static LoginTitle = 'Craft Metrics Login';
   static GetLoginSubTitle = (): null | string => {
     return null;
   };

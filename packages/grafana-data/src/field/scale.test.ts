@@ -10,7 +10,7 @@ describe('getScaleCalculator', () => {
     const thresholds = [
       { index: 2, value: 75, color: '#6ED0E0' },
       { index: 1, value: 50, color: '#EAB839' },
-      { index: 0, value: -Infinity, color: '#7EB26D' },
+      { index: 0, value: -Infinity, color: '#00b380' },
     ];
 
     const field: Field = {

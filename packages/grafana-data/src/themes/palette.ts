@@ -1,4 +1,9 @@
 export const palette = {
+  cmGreenBright: '#00946a',
+  cmGreenMid: '#00805b',
+  cmGreenDark: '#00583F', // Original CM colour
+  cmYellow: '#f4d553',
+
   white: '#fff',
   black: '#000',
 
@@ -24,12 +29,12 @@ export const palette = {
   // from figma
   lightBorder1: '#E4E7E7',
 
-  blueDarkMain: '#3D71D9', // '#4165F5',
+  blueDarkMain: '#3D71D9', // '#4165F5', // hsl(220, 67%, 55%)
   blueDarkText: '#6E9FFF', // '#58a6ff', //'#33a2e5', // '#5790FF',
   redDarkMain: '#D10E5C',
   redDarkText: '#FF5286',
-  greenDarkMain: '#1A7F4B',
-  greenDarkText: '#6CCF8E',
+  greenDarkMain: '#00805b',
+  greenDarkText: '#00956b',
   orangeDarkMain: '#F5B73D',
   orangeDarkText: '#F8D06B',
 
@@ -37,8 +42,8 @@ export const palette = {
   blueLightText: '#0465d7', // '#1F62E0',
   redLightMain: '#E0226E',
   redLightText: '#CF0E5B',
-  greenLightMain: '#1A7F4B',
-  greenLightText: '#1A7F4B',
+  greenLightMain: '#00805b',
+  greenLightText: '#00956b',
   orangeLightMain: '#E56F00',
   orangeLightText: '#BD4B00',
 };

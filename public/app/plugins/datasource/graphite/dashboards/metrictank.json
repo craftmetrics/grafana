@@ -110,7 +110,7 @@
         },
         {
           "alias": "/metricpoint_no_org.received/",
-          "color": "#7eb26d",
+          "color": "#00b380",
           "lines": true,
           "points": false,
           "stack": "A"
@@ -1601,7 +1601,7 @@
         "mem max": "#3F6833",
         "mem median": "#9AC48A",
         "mem min": "#E0F9D7",
-        "mem p90": "#7EB26D",
+        "mem p90": "#00b380",
         "mem-cass max": "#890F02",
         "mem-cass median": "#E24D42",
         "mem-cass min": "#F9934E",
@@ -1730,7 +1730,7 @@
         "mem max": "#3F6833",
         "mem median": "#9AC48A",
         "mem min": "#E0F9D7",
-        "mem p90": "#7EB26D",
+        "mem p90": "#00b380",
         "mem-cass max": "#890F02",
         "mem-cass median": "#E24D42",
         "mem-cass min": "#F9934E",
@@ -3186,7 +3186,7 @@
         "max": "#DEDAF7",
         "mean": "#052B51",
         "memory.fail": "#BF1B00",
-        "memory.ok": "#7EB26D",
+        "memory.ok": "#00b380",
         "metrics_to_es.fail": "#BF1B00",
         "metrics_to_es.ok": "#629E51",
         "p75": "#0A50A1",
@@ -3801,7 +3801,7 @@
     },
     {
       "aliasColors": {
-        "queue-items": "#7EB26D",
+        "queue-items": "#00b380",
         "queue-limit": "#BF1B00"
       },
       "bars": false,
@@ -3905,7 +3905,7 @@
     },
     {
       "aliasColors": {
-        "queue-items": "#7EB26D",
+        "queue-items": "#00b380",
         "queue-limit": "#BF1B00"
       },
       "bars": false,
@@ -4277,7 +4277,7 @@
         "add": "#629E51",
         "chunk evict": "#3F2B5B",
         "evict": "#962D82",
-        "hit-full": "#7EB26D",
+        "hit-full": "#00b380",
         "hit-partial": "#E0752D",
         "metric evict": "#6D1F62",
         "miss": "#BF1B00"

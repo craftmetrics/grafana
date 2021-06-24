@@ -33,7 +33,7 @@ export const PENDING_COLOR = 'rgba(247, 149, 32, 1)';
  */
 export const REGION_FILL_ALPHA = 0.09;
 export const colors = [
-  '#7EB26D', // 0: pale green
+  '#00b380', // 0: Craft Metrics green
   '#EAB839', // 1: mustard
   '#6ED0E0', // 2: light blue
   '#EF843C', // 3: orange

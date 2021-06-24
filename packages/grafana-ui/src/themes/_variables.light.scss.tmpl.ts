@@ -9,6 +9,8 @@ export const lightThemeVarsTemplate = (theme: GrafanaTheme2) =>
 // Global values
 // --------------------------------------------------
 
+$green: #00583f;
+
 $theme-name: light;
 
 // New Colors
@@ -102,8 +104,8 @@ $text-blue: ${theme.v1.colors.textBlue};
 $text-shadow-faint: none;
 
 // gradients
-$brand-gradient-horizontal: linear-gradient(to right, #f05a28 30%, #fbca0a 99%);
-$brand-gradient-vertical: linear-gradient(#f05a28 30%, #fbca0a 99%);
+$brand-gradient-horizontal: linear-gradient(to right, #00946a 0%, #00805b 100%);
+$brand-gradient-vertical: linear-gradient(#00946a 0%, #00805b 100%);
 
 // Links
 // -------------------------
@@ -353,16 +355,16 @@ $variable-option-bg: $dropdownLinkBackgroundHover;
 //Switch Slider
 // -------------------------
 $switch-bg: $white;
-$switch-slider-color: $gray-7;
+$switch-slider-color: $white;
 $switch-slider-off-bg: $gray-5;
-$switch-slider-on-bg: ${theme.v1.palette.blue77};
+$switch-slider-on-bg: linear-gradient(90deg, lighten($green, 10%), $green);;
 $switch-slider-shadow: 0 0 3px $dark-2;
 
 //Checkbox
 // -------------------------
 $checkbox-bg: $gray-6;
 $checkbox-border: 1px solid $gray-3;
-$checkbox-checked-bg: linear-gradient(0deg, #ff9830, #e55400);
+$checkbox-checked-bg: linear-gradient(0deg, lighten($green, 10%), $green);
 $checkbox-color: $gray-7;
 
 //Panel Edit

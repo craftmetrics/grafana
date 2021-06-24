@@ -57,13 +57,13 @@ describe('thresholds', () => {
 
   describe('Get color from threshold', () => {
     it('should get first threshold color when only one threshold', () => {
-      const thresholds = [{ index: 0, value: -Infinity, color: '#7EB26D' }];
+      const thresholds = [{ index: 0, value: -Infinity, color: '#00b380' }];
       expect(getThreshold(49, thresholds, ThresholdsMode.Absolute)).toEqual(thresholds[0]);
     });
 
     it('should get the threshold color if value is same as a threshold', () => {
       const thresholds = [
-        { index: 0, value: -Infinity, color: '#7EB26D' },
+        { index: 0, value: -Infinity, color: '#00b380' },
         { index: 1, value: 50, color: '#EAB839' },
         { index: 2, value: 75, color: '#6ED0E0' },
       ];
@@ -72,7 +72,7 @@ describe('thresholds', () => {
 
     it('should get the nearest threshold color between thresholds', () => {
       const thresholds = [
-        { index: 0, value: -Infinity, color: '#7EB26D' },
+        { index: 0, value: -Infinity, color: '#00b380' },
         { index: 1, value: 50, color: '#EAB839' },
         { index: 2, value: 75, color: '#6ED0E0' },
       ];
@@ -81,7 +81,7 @@ describe('thresholds', () => {
 
     it('should be able to get percent based threshold', () => {
       const thresholds = [
-        { index: 0, value: 0, color: '#7EB26D' },
+        { index: 0, value: 0, color: '#00b380' },
         { index: 1, value: 50, color: '#EAB839' },
         { index: 2, value: 75, color: '#6ED0E0' },
       ];

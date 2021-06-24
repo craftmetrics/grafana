@@ -231,7 +231,7 @@ function getClassicPalette() {
   // Todo replace these with named colors (as many as possible)
 
   return [
-    'green', // '#7EB26D', // 0: pale green
+    'green', // '#00b380', // 0: pale green
     'semi-dark-yellow', // '#EAB839', // 1: mustard
     'light-blue', // #6ED0E0', // 2: light blue
     'semi-dark-orange', // '#EF843C', // 3: orange

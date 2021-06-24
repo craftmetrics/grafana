@@ -18,7 +18,7 @@ const setup = (propOverrides?: FieldConfig) => {
     },
     thresholds: {
       mode: ThresholdsMode.Absolute,
-      steps: [{ value: -Infinity, color: '#7EB26D' }],
+      steps: [{ value: -Infinity, color: '#00b380' }],
     },
   };
   Object.assign(field, propOverrides);
@@ -48,12 +48,12 @@ const setup = (propOverrides?: FieldConfig) => {
 describe('Get thresholds formatted', () => {
   it('should return first thresholds color for min and max', () => {
     const { instance } = setup({
-      thresholds: { mode: ThresholdsMode.Absolute, steps: [{ value: -Infinity, color: '#7EB26D' }] },
+      thresholds: { mode: ThresholdsMode.Absolute, steps: [{ value: -Infinity, color: '#00b380' }] },
     });
 
     expect(instance.getFormattedThresholds(2)).toEqual([
-      { value: 0, color: '#7EB26D' },
-      { value: 100, color: '#7EB26D' },
+      { value: 0, color: '#00b380' },
+      { value: 100, color: '#00b380' },
     ]);
   });
 
@@ -62,7 +62,7 @@ describe('Get thresholds formatted', () => {
       thresholds: {
         mode: ThresholdsMode.Absolute,
         steps: [
-          { value: -Infinity, color: '#7EB26D' },
+          { value: -Infinity, color: '#00b380' },
           { value: 50, color: '#EAB839' },
           { value: 75, color: '#6ED0E0' },
         ],
@@ -70,8 +70,8 @@ describe('Get thresholds formatted', () => {
     });
 
     expect(instance.getFormattedThresholds(2)).toEqual([
-      { value: 0, color: '#7EB26D' },
-      { value: 50, color: '#7EB26D' },
+      { value: 0, color: '#00b380' },
+      { value: 50, color: '#00b380' },
       { value: 75, color: '#EAB839' },
       { value: 100, color: '#6ED0E0' },
     ]);

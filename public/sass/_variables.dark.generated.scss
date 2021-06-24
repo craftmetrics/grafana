@@ -11,17 +11,19 @@
 // Global values
 // --------------------------------------------------
 
+$green: #00583f;
+
 $theme-name: dark;
 
 // New Colors
 // -------------------------
-$blue-light: #6E9FFF;
-$blue-base: #3D71D9;
-$blue-shade: rgb(90, 134, 222);
+$blue-light: #00956b;
+$blue-base: #00805b;
+$blue-shade: rgb(38, 147, 115);
 $red-base: #D10E5C;
 $red-shade: rgb(215, 50, 116);
-$green-base: #1A7F4B;
-$green-shade: rgb(60, 146, 102);
+$green-base: #00805b;
+$green-shade: rgb(38, 147, 115);
 $orange-dark: #ff780a;
 
 $gray98: #f7f8fa;
@@ -73,21 +75,21 @@ $red: $red-base;
 $yellow: #ecbb13;
 $orange: #eb7b18;
 $purple: #9933cc;
-$variable: #6E9FFF;
+$variable: #00956b;
 
 $brand-primary: #eb7b18;
-$brand-success: #1A7F4B;
+$brand-success: #00805b;
 $brand-warning: #F5B73D;
 $brand-danger: #D10E5C;
 
 $query-red: #FF5286;
-$query-green: #6CCF8E;
+$query-green: #00956b;
 $query-purple: #fe85fc;
 $query-orange: #eb7b18;
 
 // Status colors
 // -------------------------¨
-$online: #6CCF8E;
+$online: #00956b;
 $warn: #F8D06B;
 $critical: #FF5286;
 
@@ -103,14 +105,14 @@ $text-color-semi-weak: rgba(204, 204, 220, 0.65);
 $text-color-weak: rgba(204, 204, 220, 0.65);
 $text-color-faint: rgba(204, 204, 220, 0.40);
 $text-color-emphasis: #fff;
-$text-blue: #6E9FFF;
+$text-blue: #00956b;
 
 $text-shadow-faint: 1px 1px 4px rgb(45, 45, 45);
 $textShadow: none;
 
 // gradients
-$brand-gradient-horizontal: linear-gradient(to right, #f05a28 30%, #fbca0a 99%);
-$brand-gradient-vertical: linear-gradient(#f05a28 30%, #fbca0a 99%);
+$brand-gradient-horizontal: linear-gradient(to right, #00946a 0%, #00805b 100%);
+$brand-gradient-vertical: linear-gradient(#00946a 0%, #00805b 100%);
 
 // Links
 // -------------------------
@@ -214,8 +216,8 @@ $input-bg-disabled: rgba(204, 204, 220, 0.07);
 $input-color: rgb(204, 204, 220);
 $input-border-color: rgba(204, 204, 220, 0.15);
 $input-box-shadow: none;
-$input-border-focus: #6E9FFF;
-$input-box-shadow-focus: #6E9FFF !default;
+$input-border-focus: #00956b;
+$input-box-shadow-focus: #00956b !default;
 $input-color-placeholder: rgba(204, 204, 220, 0.40);
 $input-label-bg: #22252b;
 $input-color-select-arrow: $white;
@@ -274,10 +276,10 @@ $tab-border-color: $dark-9;
 // -------------------------
 $warning-text-color: #F8D06B;
 $error-text-color: #FF5286;
-$success-text-color: #6CCF8E;
+$success-text-color: #00956b;
 
 $alert-error-bg: #D10E5C;
-$alert-success-bg: #1A7F4B;
+$alert-success-bg: #00805b;
 $alert-warning-bg: #F5B73D;
 $alert-info-bg: #F5B73D;
 
@@ -358,16 +360,16 @@ $variable-option-bg: $dropdownLinkBackgroundHover;
 //Switch Slider
 // -------------------------
 $switch-bg: $input-bg;
-$switch-slider-color: $dark-3;
+$switch-slider-color: $white;
 $switch-slider-off-bg: $gray-1;
-$switch-slider-on-bg: #5794f2;
+$switch-slider-on-bg: linear-gradient(90deg, lighten($green, 10%), $green);;
 $switch-slider-shadow: 0 0 3px black;
 
 //Checkbox
 // -------------------------
 $checkbox-bg: $dark-1;
 $checkbox-border: 1px solid $gray-1;
-$checkbox-checked-bg: linear-gradient(0deg, #eb7b18, #d44a3a);
+$checkbox-checked-bg: linear-gradient(0deg, lighten($green, 10%), $green);
 $checkbox-color: $dark-1;
 
 //Panel Edit

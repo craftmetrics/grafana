@@ -23,7 +23,7 @@ const discreteInV8 = {
   colorMaps: [
     {
       $$hashKey: 'object:365',
-      color: '#7EB26D',
+      color: '#00b380',
       text: '1',
     },
     {

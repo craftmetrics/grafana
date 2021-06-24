@@ -102,9 +102,9 @@ class DarkColors implements ThemeColorsBase<Partial<ThemeRichColor>> {
   };
 
   primary = {
-    main: palette.blueDarkMain,
-    text: palette.blueDarkText,
-    border: palette.blueDarkText,
+    main: palette.greenDarkMain,
+    text: palette.greenDarkText,
+    border: palette.greenDarkText,
   };
 
   secondary = {
@@ -149,8 +149,8 @@ class DarkColors implements ThemeColorsBase<Partial<ThemeRichColor>> {
   };
 
   gradients = {
-    brandHorizontal: ' linear-gradient(270deg, #F55F3E 0%, #FF8833 100%);',
-    brandVertical: 'linear-gradient(0.01deg, #F55F3E 0.01%, #FF8833 99.99%);',
+    brandHorizontal: 'linear-gradient(to right, #00946a 0%, #00805b 100%);',
+    brandVertical: 'linear-gradient(#00946a 0%, #00805b 100%)',
   };
 
   contrastThreshold = 3;
@@ -164,9 +164,9 @@ class LightColors implements ThemeColorsBase<Partial<ThemeRichColor>> {
   blackBase = '36, 41, 46';
 
   primary = {
-    main: palette.blueLightMain,
-    border: palette.blueLightText,
-    text: palette.blueLightText,
+    main: palette.greenLightMain,
+    border: palette.greenLightText,
+    text: palette.greenLightText,
   };
 
   text = {
@@ -229,8 +229,8 @@ class LightColors implements ThemeColorsBase<Partial<ThemeRichColor>> {
   };
 
   gradients = {
-    brandHorizontal: 'linear-gradient(90deg, #FF8833 0%, #F53E4C 100%);',
-    brandVertical: 'linear-gradient(0.01deg, #F53E4C -31.2%, #FF8833 113.07%);',
+    brandHorizontal: 'linear-gradient(to right, #00946a 0%, #00805b 100%);',
+    brandVertical: 'linear-gradient(#00946a 0%, #00805b 100%)',
   };
 
   contrastThreshold = 3;

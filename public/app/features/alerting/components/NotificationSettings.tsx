@@ -22,7 +22,7 @@ export const NotificationSettings: FC<Props> = ({ currentFormValues, imageRender
       {currentFormValues.uploadImage && !imageRendererAvailable && (
         <InfoBox title="No image renderer available/installed">
           Grafana cannot find an image renderer to capture an image for the notification. Please make sure the Grafana
-          Image Renderer plugin is installed. Please contact your Grafana administrator to install the plugin.
+          Image Renderer plugin is installed. Please <a href="mailto:support@craftmetrics.ca">contact support</a>.
         </InfoBox>
       )}
       <Field>

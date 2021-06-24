@@ -87,7 +87,7 @@ describe('ThresholdsEditor', () => {
       const thresholds = {
         mode: ThresholdsMode.Absolute,
         steps: [
-          { value: -Infinity, color: '#7EB26D' },
+          { value: -Infinity, color: '#00b380' },
           { value: 50, color: '#EAB839' },
           { value: 75, color: '#6ED0E0' },
         ],
@@ -103,7 +103,7 @@ describe('ThresholdsEditor', () => {
       const thresholds = {
         mode: ThresholdsMode.Absolute,
         steps: [
-          { value: -Infinity, color: '#7EB26D' },
+          { value: -Infinity, color: '#00b380' },
           { value: 50, color: '#EAB839' },
           { value: 75, color: '#6ED0E0' },
         ],
@@ -113,7 +113,7 @@ describe('ThresholdsEditor', () => {
       instance.onRemoveThreshold(instance.state.steps[1]);
 
       expect(getCurrentThresholds(instance).steps).toEqual([
-        { value: -Infinity, color: '#7EB26D' },
+        { value: -Infinity, color: '#00b380' },
         { value: 75, color: '#6ED0E0' },
       ]);
     });
@@ -124,7 +124,7 @@ describe('ThresholdsEditor', () => {
       const thresholds = {
         mode: ThresholdsMode.Absolute,
         steps: [
-          { value: -Infinity, color: '#7EB26D' },
+          { value: -Infinity, color: '#00b380' },
           { value: 50, color: '#EAB839' },
           { value: 75, color: '#6ED0E0' },
         ],
@@ -143,7 +143,7 @@ describe('ThresholdsEditor', () => {
       const thresholds = {
         mode: ThresholdsMode.Absolute,
         steps: [
-          { value: -Infinity, color: '#7EB26D', key: 1 },
+          { value: -Infinity, color: '#00b380', key: 1 },
           { value: 50, color: '#EAB839', key: 2 },
           { value: 75, color: '#6ED0E0', key: 3 },
         ],
@@ -158,7 +158,7 @@ describe('ThresholdsEditor', () => {
       instance.onChangeThresholdValue(mockEvent, thresholds.steps[1]);
 
       expect(getCurrentThresholds(instance).steps).toEqual([
-        { value: -Infinity, color: '#7EB26D' },
+        { value: -Infinity, color: '#00b380' },
         { value: 75, color: '#6ED0E0' },
         { value: 78, color: '#EAB839' },
       ]);
@@ -171,7 +171,7 @@ describe('ThresholdsEditor', () => {
       const thresholds = {
         mode: ThresholdsMode.Absolute,
         steps: [
-          { value: -Infinity, color: '#7EB26D', key: 1 },
+          { value: -Infinity, color: '#00b380', key: 1 },
           { value: 78, color: '#EAB839', key: 2 },
           { value: 75, color: '#6ED0E0', key: 3 },
         ],
@@ -184,7 +184,7 @@ describe('ThresholdsEditor', () => {
       instance.onBlur();
 
       expect(getCurrentThresholds(instance).steps).toEqual([
-        { value: -Infinity, color: '#7EB26D' },
+        { value: -Infinity, color: '#00b380' },
         { value: 75, color: '#6ED0E0' },
         { value: 78, color: '#EAB839' },
       ]);
@@ -197,18 +197,18 @@ describe('ThresholdsEditor', () => {
         thresholds: {
           mode: ThresholdsMode.Absolute,
           steps: [
-            { value: -Infinity, color: '#7EB26D', key: 1 },
+            { value: -Infinity, color: '#00b380', key: 1 },
             { value: 75, color: '#6ED0E0', key: 2 },
-            { color: '#7EB26D', key: 3 } as any,
+            { color: '#00b380', key: 3 } as any,
             { value: 78, color: '#EAB839', key: 4 },
-            { value: null, color: '#7EB26D', key: 5 } as any,
-            { value: null, color: '#7EB26D', key: 6 } as any,
+            { value: null, color: '#00b380', key: 5 } as any,
+            { value: null, color: '#00b380', key: 6 } as any,
           ],
         },
       });
 
       expect(getCurrentThresholds(instance).steps).toEqual([
-        { value: -Infinity, color: '#7EB26D' },
+        { value: -Infinity, color: '#00b380' },
         { value: 75, color: '#6ED0E0' },
         { value: 78, color: '#EAB839' },
       ]);

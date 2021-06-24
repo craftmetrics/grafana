@@ -720,7 +720,7 @@
     {
       "aliasColors": {
         "alerting": "#890F02",
-        "ok": "#7EB26D"
+        "ok": "#00b380"
       },
       "bars": false,
       "dashLength": 10,
@@ -816,7 +816,7 @@
         "alerting": "#890F02",
         "alertname": "#BF1B00",
         "firing alerts": "#BF1B00",
-        "ok": "#7EB26D"
+        "ok": "#00b380"
       },
       "bars": false,
       "dashLength": 10,
