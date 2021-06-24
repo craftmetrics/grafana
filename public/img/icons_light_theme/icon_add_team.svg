@@ -20,14 +20,8 @@
 		h13.8h4.3v-1.1C26.5,45,28.6,42.8,31.3,42.8z"/>
 	
 		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="43.45" y1="-15.1029" x2="43.45" y2="39.5019" gradientTransform="matrix(1 0 0 -1 0 66)">
-		<stop  offset="0" style="stop-color:#FFF23A"/>
-		<stop  offset="4.010540e-02" style="stop-color:#FEE62D"/>
-		<stop  offset="0.1171" style="stop-color:#FED41A"/>
-		<stop  offset="0.1964" style="stop-color:#FDC90F"/>
-		<stop  offset="0.2809" style="stop-color:#FDC60B"/>
-		<stop  offset="0.6685" style="stop-color:#F28F3F"/>
-		<stop  offset="0.8876" style="stop-color:#ED693C"/>
-		<stop  offset="1" style="stop-color:#E83E39"/>
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#00583f"/>
 	</linearGradient>
 	<path class="st1" d="M55.5,46.9h-4.3h-0.3h-3.2V39c0-0.4-0.3-0.7-0.7-0.7h-2.3h-1.9h-2.9c-0.4,0-0.7,0.3-0.7,0.7v7.9H39h-7.7
 		c-0.4,0-0.7,0.3-0.7,0.7v1.1v6c0,0.4,0.3,0.7,0.7,0.7h3.3h4.6v2.7v1.1v4c0,0.4,0.3,0.7,0.7,0.7H47c0.4,0,0.7-0.3,0.7-0.7v-7.9h7.9
