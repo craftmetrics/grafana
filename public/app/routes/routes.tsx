@@ -292,7 +292,7 @@ export function getAppRoutes(): RouteDescriptor[] {
       ),
     },
     {
-      path: '/user/password/reset',
+      path: '/user/password/reset/:code',
       component: SafeDynamicImport(
         () =>
           import(

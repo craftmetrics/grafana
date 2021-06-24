@@ -114,7 +114,7 @@ func (hs *HTTPServer) registerRoutes() {
 
 	// reset password
 	r.Get("/user/password/send-reset-email", reqNotSignedIn, hs.Index)
-	r.Get("/user/password/reset", hs.Index)
+	r.Get("/user/password/reset/:code", hs.Index)
 
 	r.Post("/api/user/password/send-reset-email", bind(dtos.SendResetPasswordEmailForm{}), routing.Wrap(SendResetPasswordEmail))
 	r.Post("/api/user/password/reset", bind(dtos.ResetUserPasswordForm{}), routing.Wrap(ResetPassword))
