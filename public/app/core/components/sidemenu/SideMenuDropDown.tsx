@@ -18,7 +18,7 @@ const SideMenuDropDown: FC<Props> = (props) => {
 
   const linkContent = <span className="sidemenu-item-text">{link.text}</span>;
   const anchor = link.url ? (
-    <Link href={link.url} onClick={onHeaderClick} className="side-menu-header-link">
+    <Link href={link.url} target={link.target} onClick={onHeaderClick} className="side-menu-header-link">
       {linkContent}
     </Link>
   ) : (

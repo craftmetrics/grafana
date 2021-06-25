@@ -21,7 +21,17 @@ const DropDownChild: FC<Props> = (props) => {
     </>
   );
 
-  const anchor = child.url ? <Link href={child.url}>{linkContent}</Link> : <a>{linkContent}</a>;
+  const anchor = child.url ? (
+    child.target ? (
+      <a href={child.url} target={child.target}>
+        {linkContent}
+      </a>
+    ) : (
+      <Link href={child.url}>{linkContent}</Link>
+    )
+  ) : (
+    <a>{linkContent}</a>
+  );
 
   return <li className={listItemClassName}>{anchor}</li>;
 };
