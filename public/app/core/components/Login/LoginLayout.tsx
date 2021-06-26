@@ -45,18 +45,20 @@ export const getLoginStyles = (theme: GrafanaTheme2) => {
   const bgColor = theme.isDark ? '#000' : theme.colors.background.canvas;
 
   return {
-    container: css({
-      minHeight: '100vh',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      backgroundColor: bgColor,
-      minWidth: '100%',
-      marginLeft: 0,
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-    }),
+    container: css`
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: ${bgColor};
+      min-width: 100%;
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @media (min-width: 600px) {
+        min-height: 100vh;
+      }
+    `,
     loginAnim: css`
       &:before {
         opacity: 1;
@@ -71,8 +73,8 @@ export const getLoginStyles = (theme: GrafanaTheme2) => {
       width: 100%;
     `,
     loginLogo: css`
-      width: 100%;
-      max-width: 100px;
+      width: 50%;
+      max-width: 170px;
       margin-bottom: 15px;
     `,
     loginLogoWrapper: css`
@@ -93,7 +95,6 @@ export const getLoginStyles = (theme: GrafanaTheme2) => {
       color: ${theme.colors.text.secondary};
     `,
     loginContent: css`
-      max-width: 478px;
       width: 100%;
       display: flex;
       align-items: stretch;
@@ -102,10 +103,13 @@ export const getLoginStyles = (theme: GrafanaTheme2) => {
       justify-content: center;
       z-index: 1;
       min-height: 320px;
-      border-radius: ${theme.shape.borderRadius(4)};
       padding: ${theme.spacing(2, 0)};
       opacity: 0;
       transition: opacity 0.5s ease-in-out;
+      @media (min-width: 600px) {
+        max-width: 478px;
+        border-radius: ${theme.shape.borderRadius(4)};
+      }
     `,
     loginOuterBox: css`
       display: flex;

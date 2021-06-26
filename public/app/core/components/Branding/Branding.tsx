@@ -9,13 +9,9 @@ export interface BrandComponentProps {
 }
 
 export const LoginLogo: FC<BrandComponentProps> = ({ className }) => {
-  const maxSize = css`
-    max-width: 180px;
-  `;
-
   return (
     <>
-      <img className={cx(className, maxSize)} src="public/img/cm_stacktop_rev.png" alt="Craft Metrics" />
+      <img className={className} src="public/img/cm_stacktop_rev.png" alt="Craft Metrics" />
     </>
   );
 };
