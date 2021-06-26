@@ -4,7 +4,6 @@ import { connect, MapDispatchToProps } from 'react-redux';
 // Utils & Services
 import { playlistSrv } from 'app/features/playlist/PlaylistSrv';
 // Components
-import { DashNavButton } from './DashNavButton';
 import { DashNavTimeControls } from './DashNavTimeControls';
 import { ButtonGroup, ModalsController, ToolbarButton, PageToolbar } from '@grafana/ui';
 import { textUtil } from '@grafana/data';
@@ -112,25 +111,11 @@ class DashNav extends PureComponent<Props> {
   }
 
   renderLeftActionsButton() {
-    const { dashboard, kioskMode } = this.props;
-    const { canStar, isStarred } = dashboard.meta;
+    const { kioskMode } = this.props;
     const buttons: ReactNode[] = [];
 
     if (kioskMode !== KioskMode.Off || this.isPlaylistRunning()) {
       return [];
-    }
-
-    if (canStar) {
-      buttons.push(
-        <DashNavButton
-          tooltip="Mark as favorite"
-          icon={isStarred ? 'favorite' : 'star'}
-          iconType={isStarred ? 'mono' : 'default'}
-          iconSize="lg"
-          onClick={this.onStarDashboard}
-          key="button-star"
-        />
-      );
     }
 
     this.addCustomContent(customLeftActions, buttons);
