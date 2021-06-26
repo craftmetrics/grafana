@@ -13,7 +13,6 @@ import { updateTimeZoneForSession } from 'app/features/profile/state/reducers';
 // Types
 import { DashboardModel } from '../../state';
 import { KioskMode, StoreState } from 'app/types';
-import { ShareModal } from 'app/features/dashboard/components/ShareModal';
 import { SaveDashboardModalProxy } from 'app/features/dashboard/components/SaveDashboard/SaveDashboardModalProxy';
 import { locationService } from '@grafana/runtime';
 import { toggleKioskMode } from 'app/core/navigation/kiosk';
@@ -114,7 +113,7 @@ class DashNav extends PureComponent<Props> {
 
   renderLeftActionsButton() {
     const { dashboard, kioskMode } = this.props;
-    const { canStar, canShare, isStarred } = dashboard.meta;
+    const { canStar, isStarred } = dashboard.meta;
     const buttons: ReactNode[] = [];
 
     if (kioskMode !== KioskMode.Off || this.isPlaylistRunning()) {
@@ -131,26 +130,6 @@ class DashNav extends PureComponent<Props> {
           onClick={this.onStarDashboard}
           key="button-star"
         />
-      );
-    }
-
-    if (canShare) {
-      buttons.push(
-        <ModalsController key="button-share">
-          {({ showModal, hideModal }) => (
-            <DashNavButton
-              tooltip="Share dashboard or panel"
-              icon="share-alt"
-              iconSize="lg"
-              onClick={() => {
-                showModal(ShareModal, {
-                  dashboard,
-                  onDismiss: hideModal,
-                });
-              }}
-            />
-          )}
-        </ModalsController>
       );
     }
 
