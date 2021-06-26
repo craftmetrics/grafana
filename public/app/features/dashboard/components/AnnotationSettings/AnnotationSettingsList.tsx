@@ -91,14 +91,9 @@ export const AnnotationSettingsList: React.FC<Props> = ({ dashboard, onNew, onEd
           infoBox={{
             __html: `<p>Annotations provide a way to integrate event data into your graphs. They are visualized as vertical lines
           and icons on all graph panels. When you hover over an annotation icon you can get event text &amp; tags for
-          the event. You can add annotation events directly from grafana by holding CTRL or CMD + click on graph (or
-          drag region). These will be stored in Grafana's annotation database.
-        </p>
-        Checkout the
-        <a class='external-link' target='_blank' href='http://docs.grafana.org/reference/annotations/'
-          >Annotations documentation</a
-        >
-        for more information.`,
+          the event. You can add annotation events directly by holding CTRL or CMD + click on graph (or
+          drag region).
+          </p>`,
           }}
         />
       )}

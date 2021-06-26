@@ -40,10 +40,6 @@ const emptyListModel = {
   buttonIcon: 'database' as IconName,
   buttonLink: 'datasources/new',
   buttonTitle: 'Add data source',
-  proTip: 'You can also define data sources through configuration files.',
-  proTipLink: 'http://docs.grafana.org/administration/provisioning/#datasources?utm_source=grafana_ds_list',
-  proTipLinkTitle: 'Learn more',
-  proTipTarget: '_blank',
 };
 
 export class DataSourcesListPage extends PureComponent<Props> {

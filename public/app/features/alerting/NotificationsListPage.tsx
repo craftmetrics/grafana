@@ -108,10 +108,6 @@ const NotificationsListPage: FC = () => {
             buttonIcon="channel-add"
             buttonLink="alerting/notification/new"
             buttonTitle="Add channel"
-            proTip="You can include images in your alert notifications."
-            proTipLink="http://docs.grafana.org/alerting/notifications/"
-            proTipLinkTitle="Learn more"
-            proTipTarget="_blank"
           />
         )}
       </Page.Contents>

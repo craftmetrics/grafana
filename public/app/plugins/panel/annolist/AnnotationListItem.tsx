@@ -121,7 +121,7 @@ function getStyles(theme: GrafanaTheme) {
       }
 
       .fa-star {
-        color: ${theme.palette.orange};
+        color: ${theme.palette.greenBase};
       }
     `,
     login: css`
