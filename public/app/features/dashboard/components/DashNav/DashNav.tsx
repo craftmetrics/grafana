@@ -207,16 +207,14 @@ class DashNav extends PureComponent<Props> {
   }
 
   render() {
-    const { isFullscreen, title, folderTitle } = this.props;
+    const { isFullscreen, title } = this.props;
     const onGoBack = isFullscreen ? this.onClose : undefined;
 
     return (
       <PageToolbar
-        pageIcon={isFullscreen ? undefined : 'apps'}
+        pageIcon={undefined}
         title={title}
-        parent={folderTitle}
         onClickTitle={this.onDashboardNameClick}
-        onClickParent={this.onFolderNameClick}
         onGoBack={onGoBack}
         leftItems={this.renderLeftActionsButton()}
       >
