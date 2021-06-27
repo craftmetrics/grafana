@@ -27,7 +27,7 @@ basic.args = {
   timestamp: new Date('2021-01-01T00:00:00').toISOString(),
   series: [
     {
-      color: '#00956b',
+      color: '#0ab282',
       label: 'label 1',
       value: '100 W',
     },
@@ -40,7 +40,7 @@ multi.args = {
   timestamp: new Date('2021-01-01T00:00:00').toISOString(),
   series: [
     {
-      color: '#00956b',
+      color: '#0ab282',
       label: 'label 1',
       value: '100 W',
       isActive: false,

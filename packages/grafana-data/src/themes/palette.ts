@@ -34,7 +34,7 @@ export const palette = {
   redDarkMain: '#D10E5C',
   redDarkText: '#FF5286',
   greenDarkMain: '#00805b',
-  greenDarkText: '#00956b',
+  greenDarkText: '#0ab282',
   orangeDarkMain: '#F5B73D',
   orangeDarkText: '#F8D06B',
 

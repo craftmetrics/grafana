@@ -70,7 +70,7 @@ $orange: ${theme.v1.palette.orange};
 $purple: ${theme.v1.palette.purple};
 $variable: ${theme.v1.colors.textBlue};
 
-$brand-primary: ${theme.v1.palette.brandPrimary};
+$brand-primary: ${theme.v1.palette.brandSuccess};
 $brand-success: ${theme.v1.palette.brandSuccess};
 $brand-warning: ${theme.v1.palette.brandWarning};
 $brand-danger: ${theme.v1.palette.brandDanger};
@@ -357,14 +357,14 @@ $variable-option-bg: $dropdownLinkBackgroundHover;
 $switch-bg: $white;
 $switch-slider-color: $white;
 $switch-slider-off-bg: $gray-5;
-$switch-slider-on-bg: linear-gradient(90deg, lighten($green, 10%), $green);;
+$switch-slider-on-bg: linear-gradient(to right, #00946a 0%, #00805b 100%);
 $switch-slider-shadow: 0 0 3px $dark-2;
 
 //Checkbox
 // -------------------------
 $checkbox-bg: $gray-6;
 $checkbox-border: 1px solid $gray-3;
-$checkbox-checked-bg: linear-gradient(0deg, lighten($green, 10%), $green);
+$checkbox-checked-bg: linear-gradient(to right, #00946a 0%, #00805b 100%);
 $checkbox-color: $gray-7;
 
 //Panel Edit

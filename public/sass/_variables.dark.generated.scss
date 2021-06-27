@@ -17,7 +17,7 @@ $theme-name: dark;
 
 // New Colors
 // -------------------------
-$blue-light: #00956b;
+$blue-light: #0ab282;
 $blue-base: #00805b;
 $blue-shade: rgb(38, 147, 115);
 $red-base: #D10E5C;
@@ -75,7 +75,7 @@ $red: $red-base;
 $yellow: #ecbb13;
 $orange: #eb7b18;
 $purple: #9933cc;
-$variable: #00956b;
+$variable: #0ab282;
 
 $brand-primary: #00805b;
 $brand-success: #00805b;
@@ -83,13 +83,13 @@ $brand-warning: #F5B73D;
 $brand-danger: #D10E5C;
 
 $query-red: #FF5286;
-$query-green: #00956b;
+$query-green: #0ab282;
 $query-purple: #fe85fc;
 $query-orange: #eb7b18;
 
 // Status colors
 // -------------------------¨
-$online: #00956b;
+$online: #0ab282;
 $warn: #F8D06B;
 $critical: #FF5286;
 
@@ -105,7 +105,7 @@ $text-color-semi-weak: rgba(204, 204, 220, 0.65);
 $text-color-weak: rgba(204, 204, 220, 0.65);
 $text-color-faint: rgba(204, 204, 220, 0.40);
 $text-color-emphasis: #fff;
-$text-blue: #00956b;
+$text-blue: #0ab282;
 
 $text-shadow-faint: 1px 1px 4px rgb(45, 45, 45);
 $textShadow: none;
@@ -216,8 +216,8 @@ $input-bg-disabled: rgba(204, 204, 220, 0.07);
 $input-color: rgb(204, 204, 220);
 $input-border-color: rgba(204, 204, 220, 0.15);
 $input-box-shadow: none;
-$input-border-focus: #00956b;
-$input-box-shadow-focus: #00956b !default;
+$input-border-focus: #0ab282;
+$input-box-shadow-focus: #0ab282 !default;
 $input-color-placeholder: rgba(204, 204, 220, 0.40);
 $input-label-bg: #22252b;
 $input-color-select-arrow: $white;
@@ -276,7 +276,7 @@ $tab-border-color: $dark-9;
 // -------------------------
 $warning-text-color: #F8D06B;
 $error-text-color: #FF5286;
-$success-text-color: #00956b;
+$success-text-color: #0ab282;
 
 $alert-error-bg: #D10E5C;
 $alert-success-bg: #00805b;
@@ -362,14 +362,14 @@ $variable-option-bg: $dropdownLinkBackgroundHover;
 $switch-bg: $input-bg;
 $switch-slider-color: $white;
 $switch-slider-off-bg: $gray-1;
-$switch-slider-on-bg: linear-gradient(90deg, lighten($green, 10%), $green);;
+$switch-slider-on-bg: linear-gradient(to right, #00946a 0%, #00805b 100%);
 $switch-slider-shadow: 0 0 3px black;
 
 //Checkbox
 // -------------------------
 $checkbox-bg: $dark-1;
 $checkbox-border: 1px solid $gray-1;
-$checkbox-checked-bg: linear-gradient(0deg, lighten($green, 10%), $green);
+$checkbox-checked-bg: linear-gradient(to right, #00946a 0%, #00805b 100%);
 $checkbox-color: $dark-1;
 
 //Panel Edit

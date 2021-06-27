@@ -149,8 +149,8 @@ class DarkColors implements ThemeColorsBase<Partial<ThemeRichColor>> {
   };
 
   gradients = {
-    brandHorizontal: 'linear-gradient(to right, #00946a 0%, #00805b 100%);',
-    brandVertical: 'linear-gradient(#00946a 0%, #00805b 100%)',
+    brandHorizontal: 'linear-gradient(to right, #0ab282 0%, #00946a 100%);',
+    brandVertical: 'linear-gradient(#0ab282 0%, #00946a 100%)',
   };
 
   contrastThreshold = 3;
